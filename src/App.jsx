@@ -16,6 +16,7 @@ import Day2_0808 from './day/day2_0808/Day2_0808';
 import Day3_0811 from './day/day3_0811/Day3_0811';
 import Day4_0812 from './day/day4_0812/Day4_0812';
 import Day7_0818 from './day/day7_0818/Day7_0818';
+import Day6_0814 from './day/day6_0814/Day6_0814';
 
 function App() {
 
@@ -27,11 +28,12 @@ function App() {
       <MainContent>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/hook" element={<Hook />} />
+          {/* <Route path="/hook" element={<Hook />} /> */}
           <Route path="/day1" element={<Day1_0807 />} />
           <Route path="/day2" element={<Day2_0808 />} />
           <Route path="/day3" element={<Day3_0811 />} />
           <Route path="/day4" element={<Day4_0812 />} />
+          <Route path="/day6" element={<Day6_0814 />} />
           <Route path="/day7" element={<Day7_0818 />} />
           <Route path="/miniblog" element={<MainPage />} />
           <Route path="/post-write" element={<PostWritePage />} />

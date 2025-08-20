@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-  background-color:  #657054ff;
+  background-color:  #4476c0cb;
   // outline-width: thin;
   padding: 0.5rem 1rem;
 `;
@@ -26,8 +26,8 @@ const NavLink = styled(Link)`
   display: block;
 
   &:hover {
-    // background-color: #cadc43ff;
-    outline: 1px solid red;
+    //background-color: #dcc043ff;
+    outline: 1px solid yellow;
     // outline-bottom: 3px solid green;
     
   }
@@ -76,11 +76,11 @@ function Navigation() {
     <Nav>
       <NavList>
         <NavItem>
-          <NavLink to="/">과제방 홈</NavLink>
+          <NavLink to="/">홈</NavLink>
         </NavItem>
-        <NavItem>
+        {/* <NavItem>
           <NavLink to="/hook">훅</NavLink>
-        </NavItem>
+        </NavItem> */}
         <NavItem>
           <NavLink to="/day1">Day1</NavLink>
         </NavItem>
@@ -92,6 +92,9 @@ function Navigation() {
         </NavItem>
         <NavItem>
           <NavLink to="/day4">Day4</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/day6">Day6</NavLink>
         </NavItem>
         <NavItem>
           <NavLink to="/day7">Day7</NavLink>
