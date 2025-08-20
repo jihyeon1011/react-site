@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <h1>Vite React 과제방</h1>
+        <h1>최지현_Vite React 과제방</h1>
         <hr />
       </header>
     </>
