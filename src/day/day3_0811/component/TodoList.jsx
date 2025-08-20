@@ -1,0 +1,34 @@
+import { useState } from "react"
+
+export default function TodoList() {
+    const [todo, setTodo] = useState("")
+    const [todos, setTodos] = useState([])
+
+    const addTodo = () => {
+        if (todo.trim()) {
+            setTodos([...todos, todo])
+            setTodo("")
+        }
+    }
+    return (
+        <>
+            <h3>Array값의 상태 변화 체크</h3>
+            <h2>할 일 목록</h2>
+            <input type="text"
+                value={todo}
+                onChange={(e) => setTodo(e.target.value)}
+                placeholder="할 일을 입력하세요" />
+            <button onClick={addTodo}>추가</button>
+            <ul>
+                {/* 맵함수(키와 값을 쌍으로)로 값{}을 뽑아냄 */}
+                {todos.map(
+                    (item, index) => (
+                        <li key={index}>
+                            {item}
+                        </li>
+                    ))
+                }
+            </ul>
+        </>
+    )
+}
